@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="image/svg+xml"
+      href="./images/shum-logo-1.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shumanskii Egor | Web Developer & Mentor</title>
+    <meta
+      name="description"
+      content="Web Development and Audit for Frontend Applications"
+    />
+
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      href="/src/fonts/RobotoCondensed-Bold-optimized.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/RobotoCondensed-Light-optimized.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/Vollkorn-Regular-optimized.woff2"
+      as="font"
+      crossorigin
+    />
+
+    <link href="/src/styles/style.css" rel="stylesheet" />
+
+    <!-- Dark default user agent schema -->
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Icons set. Thanks to Phosphor Icons (https://phosphoricons.com/) -->
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <!-- external Link -->
+      <symbol id="i-external-link" viewBox="0 0 256 256" role="img">
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="216 100 216 40 156 40"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <line
+          x1="144"
+          y1="112"
+          x2="216"
+          y2="40"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M184,144v64a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h64"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </symbol>
+
+      <!-- Github -->
+      <symbol
+        id="i-github"
+        viewBox="0 0 24 24"
+        role="img"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+        ></path>
+      </symbol>
+
+      <!-- LinkedIn -->
+      <symbol id="i-linkedIn" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <rect
+          x="36"
+          y="36"
+          width="184"
+          height="184"
+          rx="8"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></rect>
+        <line
+          x1="120"
+          y1="112"
+          x2="120"
+          y2="176"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <line
+          x1="88"
+          y1="112"
+          x2="88"
+          y2="176"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M120,140a28,28,0,0,1,56,0v36"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <circle cx="88" cy="80" r="12"></circle>
+      </symbol>
+
+      <!-- Telegram -->
+      <symbol id="i-telegram" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M88,134.9,177.9,214a8,8,0,0,0,13.1-4.2L228.6,45.6a8,8,0,0,0-10.7-9.2L33.3,108.9c-7.4,2.9-6.4,13.7,1.4,15.3Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <line
+          x1="88"
+          y1="134.9"
+          x2="224.1"
+          y2="36.6"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M132.9,174.4l-31.2,31.2A8,8,0,0,1,88,200V134.9"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </symbol>
+
+      <!-- Email -->
+      <symbol viewBox="0 0 256 256" id="i-email">
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="224 56 128 144 32 56"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <path
+          d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <line
+          x1="110.5"
+          y1="128"
+          x2="34.5"
+          y2="197.7"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <line
+          x1="221.5"
+          y1="197.7"
+          x2="145.5"
+          y2="128"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+      </symbol>
+
+      <!-- Location -->
+      <symbol id="i-location" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <circle
+          cx="128"
+          cy="104"
+          r="32"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></circle>
+        <path
+          d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </symbol>
+
+      <!-- Upwork -->
+      <symbol id="i-upwork" viewBox="0 0 64 64">
+        <path
+          d="M49.487 15.034c-6.86.033-12.074 4.57-14.026 11.8-3.275-5.04-5.83-10.805-7.295-15.672l-7.22.034.1 19.138a6.861 6.861 0 0 1-13.722.065l-.1-19.138L0 11.296.1 30.435C.128 38.377 6.474 44.67 14.24 44.63s14.055-6.386 14.02-14.33l-.015-3.25c1.456 2.88 3.276 5.94 5.276 8.64l-4.415 21.144 7.4-.034 3.18-15.362c2.896 1.793 6.15 2.86 9.94 2.842C57.57 44.245 64.04 37.717 64 29.41c-.036-7.946-6.568-14.413-14.512-14.377zm.103 21.846c-2.888.013-5.782-1.236-8.138-3.213l.708-2.9v-.182c.528-3.074 2.126-8.316 7.542-8.34a7.244 7.244 0 0 1 7.257 7.188c-.163 4.153-3.577 7.42-7.37 7.437z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <!-- Doc file -->
+      <symbol id="i-doc-file" fill="currentColor" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M58,216a24,24,0,0,0,0-48H44v48Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <ellipse
+          cx="130"
+          cy="192"
+          rx="22"
+          ry="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></ellipse>
+        <path
+          d="M212,210.5a21,21,0,0,1-14,5.5c-12.2,0-22-10.7-22-24s9.8-24,22-24a21,21,0,0,1,14,5.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <path
+          d="M48,128V40a8,8,0,0,1,8-8h96l56,56v40"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <polyline
+          points="152 32 152 88 208 88"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+      </symbol>
+      <!-- Pdf file -->
+      <symbol id="i-pdf-file" fill="currentColor" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M48,128V40a8,8,0,0,1,8-8h96l56,56v40"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <polyline
+          points="152 32 152 88 208 88"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <path
+          d="M48,200H64a16,16,0,0,0,0-32H48v48"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <polyline
+          points="216 168 188 168 188 216"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <line
+          x1="212"
+          y1="196"
+          x2="188"
+          y2="196"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M128,216a24,24,0,0,0,0-48H114v48Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </symbol>
+    </svg>
+  </head>
+
+  <body
+    class="font-body bg-bkg text-white selection:bg-accent selection:text-bkg text-base bg-cover"
+  >
+    <header
+      aria-label="Welcome section"
+      class="relative flex flex-col h-screen justify-center container max-w-prose"
+    >
+      <div class="hidden-section">
+        <small
+          class="tracking-widest text-accent uppercase drop-shadow-text-sm mb-1"
+          >EGOR SHUMANSKII</small
+        >
+        <h1
+          class="leading-normal tracking-wide text-4xl text-left font-bold text-white drop-shadow-text-sm lg:drop-shadow-text-lg"
+        >
+          JavaScript Developer & Mentor
+        </h1>
+        <hr class="border-t-4 mt-4" />
+        <h2 class="font-body text-2xl text-left font-normal mt-16 ml-[20%]">
+          Web Development and Audit for Frontend Applications
+        </h2>
+      </div>
+    </header>
+
+    <main class="flex flex-col gap-28">
+      <!-- Introduction -->
+      <section aria-label="About" class="hidden-section container max-w-prose">
+        <div class="flex gap-4">
+          <small
+            class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+            >Hi, my name is</small
+          >
+          <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-[60%_1fr] sm:gap-[5%]">
+          <div class="grid gap-4">
+            <h2
+              class="leading-normal text-3xl font-bold tracking-wide drop-shadow-text-md"
+            >
+              Egor Shumanskii
+            </h2>
+            <p class="text-muted drop-shadow-text-sm max-w-prose">
+              Based on nowhere digital nomad, a web engineer skilled in MERN
+              stack with a strong focus on React.js and its ecosystem.
+            </p>
+
+            <ul
+              aria-label="Contacts"
+              class="flex justify-around gap-1 items-center"
+            >
+              <li
+                title="Github"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="https://github.com/shum-dev"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30" title="GIthubBBBB">
+                    <use xlink:href="#i-github" />
+                  </svg>
+                </a>
+              </li>
+
+              <li
+                title="UpWork"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="https://www.upwork.com/freelancers/~01816b23e1eddfb471"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30" title="GIthubBBBB">
+                    <use xlink:href="#i-upwork" />
+                  </svg>
+                </a>
+              </li>
+
+              <li
+                title="LinkedIn"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="https://linkedin.com/in/shum-dev"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30">
+                    <use xlink:href="#i-linkedIn" />
+                  </svg>
+                </a>
+              </li>
+
+              <li
+                title="Telegram"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="https://t.me/shum_dev"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30">
+                    <use xlink:href="#i-telegram" />
+                  </svg>
+                </a>
+              </li>
+
+              <li
+                title="Email"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="mailto:egor@shum.dev"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30">
+                    <use xlink:href="#i-email" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid group self-center">
+            <img
+              loading="lazy"
+              class="rounded col-span-full row-span-full place-self-center object-cover [@media(hover:hover)]:grayscale group-hover:grayscale-0 transition-all w-full max-w-xs mx-auto"
+              src="./images/shum_ava.webp"
+              alt="Egor's Photo"
+            />
+
+            <div
+              class="bg-bkgSecondary z-0 col-span-full row-span-full self-end p-2 mx-2 px-8 flex items-center justify-center w-72 sm:w-auto justify-self-center"
+            >
+              <div title="Current Location">
+                <svg height="30" width="30" title="Current Location">
+                  <use xlink:href="#i-location" />
+                </svg>
+              </div>
+              <small class="whitespace-nowrap overflow-ellipsis"
+                >Bangkok, Thailand</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section
+        aria-label="Education"
+        class="hidden-section container grid gap-8 max-w-prose"
+      >
+        <div>
+          <!-- <small
+            class="leading-normal tracking-widest text-accent uppercase drop-shadow-text-sm"
+            >Education</small
+          > -->
+          <div class="flex gap-4">
+            <small
+              class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+              >Education</small
+            >
+            <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+          </div>
+          <h2
+            class="leading-normal text-3xl font-bold tracking-wide drop-shadow-text-md"
+          >
+            Siberian Federal University
+          </h2>
+        </div>
+
+        <div>
+          <a
+            href="https://www.sfu-kras.ru/en"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+            >Institute of Space and Information Technologies</a
+          >
+          <small class="drop-shadow-text-sm max-w-prose block">
+            (Sep 2005 - Sep 2010)
+          </small>
+          <p class="text-muted drop-shadow-text-sm max-w-prose">
+            Engineer in Computer Science
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:gap-8">
+          <h3 class="text-xl font-medium tracking-wide">Languages:</h3>
+          <ul class="text-left flex flex-col gap-4 sm:flex-row sm:gap-8">
+            <li class="flex gap-4 items-center">
+              <i class="text-accent w-20 sm:w-auto">rus-RU</i>
+              <div class="flex flex-col leading-tight">
+                Russian
+                <small class="text-muted">fluent</small>
+              </div>
+            </li>
+            <li class="flex gap-4 items-center">
+              <i class="text-accent w-20 sm:w-auto">en-US</i>
+              <div class="flex flex-col leading-tight">
+                English
+                <small class="text-muted">intermediate</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-medium tracking-wide">
+            Certification & Trainings:
+          </h3>
+
+          <ul class="text-left grid gap-4 sm:grid-cols-2">
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://www.udemy.com/certificate/UC-TMRVKST2/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "The Modern React"
+                <small class="text-muted">Aug 2019</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://www.udemy.com/certificate/UC-40WL4IXF/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "JavaScript Algorithms and Data Structures"
+                <small class="text-muted">Jan 2020</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://university.mongodb.com/course_completion/94ba1aab-f61d-42a0-85ed-397dda2b22c1?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "M001: MongoDB Basics"
+                <small class="text-muted">Dec 2020</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://university.mongodb.com/course_completion/6129848f-d271-47f0-b7e5-28cd0c0ba3b2?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "M220JS: MongoDB for Javascript Developers"
+                <small class="text-muted">Jan 2021</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://university.mongodb.com/course_completion/5402f268-1099-4f5a-a430-e8daa8caf197?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "M320: Data Modeling"
+                <small class="text-muted">Jan 2020</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://drive.google.com/file/d/1GPyvdNj83X_cJEKJtne8VDGWSf2spla8/view?usp=sharing"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "RxJS Basic"
+                <small class="text-muted">Sep 2020</small>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-center">
+              <a
+                href="https://drive.google.com/file/d/1WtdDrv6vR3pKwU6hQDBQW2ru7hWnlLYH/view?usp=sharing"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+              <div class="flex flex-col leading-tight">
+                "RxJS Masterclass"
+                <small class="text-muted">Nov 2020</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Work Exp. -->
+      <section
+        aria-label="Work experience"
+        class="hidden-section container grid gap-4 max-w-prose"
+      >
+        <div>
+          <div class="flex gap-4">
+            <small
+              class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+              >EXPERIENCE</small
+            >
+            <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+          </div>
+
+          <h2
+            class="text-3xl leading-normal font-bold tracking-wide drop-shadow-text-md"
+          >
+            Career Highlights
+          </h2>
+
+          <div class="flex items-center gap-4">
+            <p class="text-muted drop-shadow-text-sm max-w-prose">
+              Download my CV -
+            </p>
+            <ul
+              aria-label="CV downloads"
+              class="flex justify-around gap-1 items-center sm:gap-4"
+            >
+              <li
+                title="CV PDF"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="./public/CV-shum.pdf"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30" title="GIthubBBBB">
+                    <use xlink:href="#i-pdf-file" />
+                  </svg>
+                </a>
+              </li>
+
+              <li
+                title="CV DOC"
+                class="hidden-lr bg-bkgSecondary rounded overflow-hidden shadow-card-down"
+              >
+                <a
+                  href="./public/CV-shum.docx"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent hover:text-current transition block p-2 sm:p-4"
+                >
+                  <svg height="30" width="30" title="GIthubBBBB">
+                    <use xlink:href="#i-doc-file" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="grid gap-8 sm:grid-cols-2 sm:gap-4 justify-items-center">
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <small
+              class="tracking-widest text-muted uppercase drop-shadow-text-sm"
+              >full-stack developer</small
+            >
+
+            <div>
+              <h3 class="text-xl font-medium tracking-wide">
+                @
+                <a
+                  href="https://sibdev.pro/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Sibdev</a
+                >
+              </h3>
+              <small class="text-muted">April 2019 - May 2020</small>
+            </div>
+
+            <div class="text-left">
+              <h5 class="tracking-widest">Projects:</h5>
+              <ul class="display flex flex-col gap-4">
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="http://wow.karma.red/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">KarmaRed</div>
+                </li>
+
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://www.grispay.com/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Grispay</div>
+                </li>
+
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://tekvel.com/en/park/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Tekvel Park</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full transition bg-bkgSecondary flex flex-col gap-4 p-4"
+          >
+            <small
+              class="tracking-widest text-muted uppercase drop-shadow-text-sm"
+              >Front-end developer</small
+            >
+            <div>
+              <h3 class="text-xl font-medium tracking-wide">
+                @
+                <a
+                  href="https://www.krastsvetmet.ru/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Krastsvetmet</a
+                >
+              </h3>
+              <small class="text-muted ml-auto">May 2020 - February 2021</small>
+            </div>
+
+            <div class="text-left">
+              <h5 class="tracking-widest">Projects:</h5>
+              <ul
+                class="list-disc list-inside marker:text-accent display flex flex-col gap-4"
+              >
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://shop-krastsvetmet.ru/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Online Shop</div>
+                </li>
+
+                <li class="text-muted drop-shadow-text-sm pl-2">
+                  Metal Trading Platform
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full transition bg-bkgSecondary flex flex-col gap-4 p-4"
+          >
+            <small
+              class="tracking-widest text-muted uppercase drop-shadow-text-sm"
+              >Senior Front-end Engineer</small
+            >
+            <div>
+              <h3 class="text-xl font-medium whitespace-nowrap tracking-wide">
+                @
+                <a
+                  href="https://sovcombank.ru/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Sovcombank</a
+                >
+              </h3>
+              <small class="text-muted">March 2021 - October 2021</small>
+            </div>
+
+            <div class="text-left">
+              <h5 class="tracking-widest">Projects:</h5>
+              <ul class="display flex flex-col gap-4">
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://sovcombank.ru/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Main site of the company</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full transition bg-bkgSecondary flex flex-col gap-4 p-4"
+          >
+            <small
+              class="tracking-widest text-muted uppercase drop-shadow-text-sm"
+              >Software Engineer</small
+            >
+
+            <div>
+              <h3 class="text-xl font-medium whitespace-nowrap tracking-wide">
+                @
+                <a
+                  href="https://www.epam.com/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >EPAM</a
+                >
+              </h3>
+              <small class="text-muted">October 2021 - May 2022</small>
+            </div>
+
+            <div class="text-left">
+              <h5 class="tracking-widest">Projects:</h5>
+              <ul class="list-disc list-inside marker:text-accent">
+                <li class="text-muted drop-shadow-text-sm">
+                  Contracts management platform
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full transition bg-bkgSecondary flex flex-col gap-4 p-4"
+          >
+            <small
+              class="tracking-widest text-muted uppercase drop-shadow-text-sm"
+              >Senior Frontend Engineer</small
+            >
+            <div>
+              <h3 class="text-xl font-medium whitespace-nowrap tracking-wide">
+                @
+                <a
+                  href="https://www.epam.com/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Datarockets</a
+                >
+              </h3>
+              <small class="text-muted">May 2022 - *current</small>
+            </div>
+
+            <div class="text-left">
+              <h5 class="tracking-widest">Projects:</h5>
+              <ul class="display flex flex-col gap-4">
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://tawbar.com/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Tawbar</div>
+                </li>
+
+                <li class="flex gap-4 items-center">
+                  <a
+                    href="https://bunz.com/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    class="text-accent hover:text-current transition"
+                  >
+                    <svg height="30" width="30">
+                      <use xlink:href="#i-external-link" />
+                    </svg>
+                  </a>
+                  <div class="mt-2">Bunz</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section
+        aria-label="Skills"
+        class="hidden-section container grid gap-4 max-w-prose"
+      >
+        <div>
+          <div class="flex gap-4">
+            <small
+              class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+              >TECH ARSENAL</small
+            >
+            <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+          </div>
+
+          <h2
+            class="text-3xl leading-normal font-bold tracking-wide drop-shadow-text-md"
+          >
+            Skills
+          </h2>
+        </div>
+
+        <ul class="grid gap-8 sm:grid-cols-2 sm:gap-4 justify-items-center">
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Markup & Styles</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">HTML</li>
+              <li class="text-muted drop-shadow-text-sm">
+                CSS, LESS, SESS, PostCSS
+              </li>
+              <li class="text-muted drop-shadow-text-sm">jSS(CSS-in-JS)</li>
+              <li class="text-muted drop-shadow-text-sm">UIKit</li>
+              <li class="text-muted drop-shadow-text-sm">SemanticUI</li>
+              <li class="text-muted drop-shadow-text-sm">Tailwind</li>
+              <li class="text-muted drop-shadow-text-sm">MaterialUI</li>
+              <li class="text-muted drop-shadow-text-sm">Ant Design</li>
+              <li class="text-muted drop-shadow-text-sm">Styled Components</li>
+              <li class="text-muted drop-shadow-text-sm">Styled System</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">JavaScript</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">ES6, ES7 ... ES11</li>
+              <li class="text-muted drop-shadow-text-sm">Vanilla JS</li>
+              <li class="text-muted drop-shadow-text-sm">jQuery</li>
+              <li class="text-muted drop-shadow-text-sm">RxJS</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">React</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">
+                Modern Concepts (Hooks, Context ...)
+              </li>
+              <li class="text-muted drop-shadow-text-sm">Next.js</li>
+              <li class="text-muted drop-shadow-text-sm">
+                Redux + Redux Toolkit
+              </li>
+              <li class="text-muted drop-shadow-text-sm">Redux-observables</li>
+              <li class="text-muted drop-shadow-text-sm">
+                Typing: Flow, Typescript
+              </li>
+              <li class="text-muted drop-shadow-text-sm">Relay</li>
+              <li class="text-muted drop-shadow-text-sm">ReactQuery</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Backend</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">Node.js</li>
+              <li class="text-muted drop-shadow-text-sm">Express</li>
+              <li class="text-muted drop-shadow-text-sm">MongoDB</li>
+              <li class="text-muted drop-shadow-text-sm">MySQL</li>
+              <li class="text-muted drop-shadow-text-sm">GraphQL</li>
+              <li class="text-muted drop-shadow-text-sm">Nginx</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Other related</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">Webpack</li>
+              <li class="text-muted drop-shadow-text-sm">D3</li>
+              <li class="text-muted drop-shadow-text-sm">Git</li>
+              <li class="text-muted drop-shadow-text-sm">Docker</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Testing</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">Jasmine</li>
+              <li class="text-muted drop-shadow-text-sm">Jest</li>
+              <li class="text-muted drop-shadow-text-sm">Enzyme</li>
+              <li class="text-muted drop-shadow-text-sm">Mocha</li>
+              <li class="text-muted drop-shadow-text-sm">Testing Library</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Science</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">
+                Algorithms and Data Structures
+              </li>
+              <li class="text-muted drop-shadow-text-sm">Design Patterns</li>
+              <li class="text-muted drop-shadow-text-sm">
+                Data Modeling Patterns
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Communications</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">WebRTC</li>
+              <li class="text-muted drop-shadow-text-sm">WebSockets</li>
+              <li class="text-muted drop-shadow-text-sm">Socket.io</li>
+            </ul>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <h5 class="text-xl font-medium tracking-wide">Blockchain App</h5>
+            <ul class="text-left list-disc list-inside marker:text-accent">
+              <li class="text-muted drop-shadow-text-sm">Solidity</li>
+              <li class="text-muted drop-shadow-text-sm">Web3</li>
+              <li class="text-muted drop-shadow-text-sm">Truffle</li>
+              <li class="text-muted drop-shadow-text-sm">Ganache</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Code Examples -->
+      <section
+        aria-label="Code Examples"
+        class="hidden-section container grid gap-4 max-w-prose"
+      >
+        <div>
+          <div class="flex gap-4">
+            <small
+              class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+              >REPOSITORIES</small
+            >
+            <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+          </div>
+
+          <h2
+            class="text-3xl leading-normal font-bold tracking-wide drop-shadow-text-md"
+          >
+            Code Examples
+          </h2>
+        </div>
+
+        <ul class="grid gap-8 sm:grid-cols-2 sm:gap-4 justify-items-center">
+          <!-- YelpCamp -->
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/YelpCamp"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://yelpcamp.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://yelpcamp.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Yelp Camp</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >Node.js Express MongoDB</small
+              >
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              Application allows users to create/update/delete posts, leave
+              comments. It has other features such as: Fuzzy serach, Google Maps
+              API, Authentication, Image Upload and more ...
+            </p>
+          </li>
+
+          <!-- Chat Board -->
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/chat-board"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://chat-board.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://chat-board.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Chat Board</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React Redux Node.js Express</small
+              >
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              Twitter-like SPA on which people with similar interests discuss
+              topics in the form of posted messages.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/react-colors"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://react-colors.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://react-colors.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >React Colors</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React MaterialUI JSS
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              This is a nice and responsive application that lets you create and
+              manage custom colour palettes or play with the default ones.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/d3_dashboard"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://d3-dashboard.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://d3-dashboard.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >D3 Dashboard</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >JS D3.js
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              This project visualize 'THE WORLD BANK' data set to show world's
+              CO2 emissions.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/api-dashboard"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://api-dashboard.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://api-dashboard.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >API Dashboard</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React Node.js Express Docker Nginx
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              A simple full-stack application that allows users to request data
+              from multiple external APIs and display the results in the form of
+              a table or a collapsible JSON structure.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/eorawidget"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://eora-widget.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://eora-widget.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >EORA widget</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              A dummy chatbot has been implemented in the form of a widget that
+              can be integrated into any project.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/2b_app"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://pizzas-app.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://pizzas-app.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Pizzas App</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React Node.js Express MongoDB Docker Nginx
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              The full-stack application with authentication/authotization
+              functionality that allows users to create pizzas and store it in
+              DB.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/movies_keeper"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://movies-keeper.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://movies-keeper.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Movies keeper</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React TS RxJS Webpack
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              This single page application allows you to work with OMDb API. You
+              can search through the movies database, get detailed information
+              about particular movie and create your favorite list.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/crowd-funding-eth-contract"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://crowdfunding.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://crowdfunding.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Crowdfunding Dapp</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React TS Next.js Web3 Truffle Solidity
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              Ethereum Dapp that allows funding a project or venture by raising
+              money from a large number of people.
+            </p>
+          </li>
+
+          <li
+            class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+          >
+            <div class="flex gap-4 justify-end">
+              <a
+                href="https://github.com/shum-dev/aura-finder"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-github" />
+                </svg>
+              </a>
+              <a
+                href="https://github-finder.shum.dev/"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="text-accent hover:text-current transition w-min"
+              >
+                <svg height="30" width="30">
+                  <use xlink:href="#i-external-link" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h5 class="text-xl font-medium tracking-wide">
+                <a
+                  href="https://github-finder.shum.dev/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+                  >Github Finder</a
+                >
+              </h5>
+              <small class="tracking-widest text-muted drop-shadow-text-sm"
+                >React Redux
+              </small>
+            </div>
+
+            <p class="drop-shadow-text-sm text-justify">
+              This application enables you to retrieve all repositories
+              associated with a specific user by searching for their username.
+              In addition, you can view detailed information for each repository
+              belonging to the user.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- More about me -->
+      <section
+        aria-label="Additional information"
+        class="hidden-section container grid gap-4 max-w-prose 00 mb-16"
+      >
+        <div>
+          <div class="flex gap-4">
+            <small
+              class="tracking-widest text-accent uppercase drop-shadow-text-sm leading-normal"
+              >MORE ABOUT ME</small
+            >
+            <hr class="grow border-t-bkgSecondary border-t-2 self-center" />
+          </div>
+          <h2
+            class="text-3xl leading-normal font-bold tracking-wide drop-shadow-text-md"
+          >
+            If you know my story, You know me
+          </h2>
+        </div>
+
+        <p class="text-muted drop-shadow-text-sm max-w-prose">
+          You can find my entire work history on
+          <a
+            href="https://krasnoyarsk.hh.ru/applicant/resumes/view?resume=843cd24cff06215cb40039ed1f6e38776c4e71"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="text-white decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1 relative"
+            >HeadHunter
+            <img
+              loading="lazy"
+              class="object-cover absolute w-5 top-0 -right-6"
+              src="./images/hh2.png"
+              alt=""
+              role="presentation"
+            />
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>

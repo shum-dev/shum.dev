@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Fonts used in this CSS file:
+  - Roboto Condensed, licensed under the Apache License, Version 2.0. 
+    Copyright 2012-2016 Google Inc. All rights reserved.
+    License URL: https://www.apache.org/licenses/LICENSE-2.0
+    It was changed - removed unused letters and symbols.
+
+  - Vollkorn, licensed under the SIL Open Font License, Version 1.1.
+    Copyright 2017 The Vollkorn Project Authors (https://github.com/FAlthausen/Vollkorn-Typeface)
+    This license is  available with a FAQ at: http://scripts.sil.org/OFL
+    It was changed - removed unused letters and symbols.
+*/
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+  src: url(/src/fonts/RobotoCondensed-Bold-optimized.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(/src/fonts/RobotoCondensed-Light-optimized.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/fonts/Vollkorn-Regular-optimized.woff2) format("woff2");
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  small.uppercase {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.5;
+  }
+
+  .hidden-lr:nth-child(2) {
+    transition-delay: 100ms;
+  }
+  .hidden-lr:nth-child(3) {
+    transition-delay: 200ms;
+  }
+  .hidden-lr:nth-child(4) {
+    transition-delay: 300ms;
+  }
+  .hidden-lr:nth-child(5) {
+    transition-delay: 400ms;
+  }
+}
+
+@layer utilities {
+  /* Paralax effect */
+  /* .perspective {
+    perspective: 100px;
+  }
+
+  .perspective-3d {
+    transform-style: preserve-3d;
+  }
+
+  .distance-1 {
+    transform: translateZ(-100px) scale(2);
+  }
+
+  .distance-2 {
+    transform: translateZ(-50px) scale(1.5);
+  } */
+
+  .hidden-section {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(3rem);
+  }
+
+  .shown-section {
+    transition: all 1s;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+
+  .hidden-lr {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .shown-lr {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
