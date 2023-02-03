@@ -31,11 +31,6 @@ const LRObserver = new IntersectionObserver(
 
         setTimeout(() => {
           element.target.classList.remove("hidden-lr", "shown-lr");
-          element.target.classList.add(
-            "hover:shadow-card-up",
-            "hover:-translate-y-2",
-            "transition"
-          );
         }, 500);
       }
     });
