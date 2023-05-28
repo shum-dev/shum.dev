@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "cp -r dist/* /var/www/shum.dev"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
