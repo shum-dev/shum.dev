@@ -18,6 +18,7 @@ const sectionsObserver = new IntersectionObserver(
     rootMargin: "0px 0px -150px 0px",
   }
 );
+
 hiddenSections.forEach((element) => sectionsObserver.observe(element));
 
 // Left To Right Animation
@@ -36,7 +37,7 @@ const LRObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.6,
+    threshold: 0.3,
   }
 );
 
