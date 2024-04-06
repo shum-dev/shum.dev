@@ -15,7 +15,7 @@ const sectionsObserver = new IntersectionObserver(
     });
   },
   {
-    rootMargin: "0px 0px -150px 0px",
+    rootMargin: "0px 0px -120px 0px",
   }
 );
 
