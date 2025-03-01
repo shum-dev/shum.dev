@@ -1,15 +1,14 @@
-// src/components/Icon.js
 class Icon extends HTMLElement {
   static get observedAttributes() {
-    return ['name', 'size'];
-  }
-
-  constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
+    return ["name", "size"];
   }
 
   connectedCallback() {
+    if (!document.querySelector("icon-set")) {
+      console.warn(
+        "IconSet component is not loaded. Icons might not display correctly."
+      );
+    }
     this.render();
   }
 
@@ -18,18 +17,14 @@ class Icon extends HTMLElement {
   }
 
   render() {
-    const name = this.getAttribute('name') || '';
-    const size = this.getAttribute('size') || '30';
+    const name = this.getAttribute("name") || "";
+    const size = this.getAttribute("size") || "30";
 
-    this.shadowRoot.innerHTML = `
-      <style>
-        :host {
-          display: inline-block;
-        }
-        svg {
-          display: block;
-        }
-      </style>
+    if (!document.querySelector(`#i-${name}`)) {
+      console.warn(`Icon "${name}" not found in IconSet`);
+    }
+
+    this.innerHTML = `
       <svg height="${size}" width="${size}">
         <use xlink:href="#i-${name}"></use>
       </svg>
@@ -37,4 +32,4 @@ class Icon extends HTMLElement {
   }
 }
 
-customElements.define('custom-icon', Icon);
+customElements.define("custom-icon", Icon);
