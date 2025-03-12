@@ -19,7 +19,8 @@
   font-weight: 700;
   font-style: bold;
   font-display: swap;
-  src: url(/src/fonts/RobotoCondensed-Bold-optimized.woff2) format("woff2");
+  src: url(/src/assets/fonts/RobotoCondensed-Bold-optimized.woff2)
+    format("woff2");
 }
 
 @font-face {
@@ -27,7 +28,8 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(/src/fonts/RobotoCondensed-Light-optimized.woff2) format("woff2");
+  src: url(/src/assets/fonts/RobotoCondensed-Light-optimized.woff2)
+    format("woff2");
 }
 
 @font-face {
@@ -35,7 +37,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/src/fonts/Vollkorn-Regular-optimized.woff2) format("woff2");
+  src: url(/src/assets/fonts/Vollkorn-Regular-optimized.woff2) format("woff2");
 }
 
 @layer base {
