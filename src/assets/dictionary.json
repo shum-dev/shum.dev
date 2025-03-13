@@ -90,61 +90,30 @@
   "workExperience": {
     "companies": [
       {
-        "position": "Full-stack Developer",
-        "link": "https://sibdev.pro/",
-        "name": "Sibdev",
-        "date": "April 2019 - May 2020",
+        "position": "Principal Frontend Tech Lead",
+        "link": "https://abhandshake.com/",
+        "name": "AB Handshake",
+        "date": "March 2023 - PRESENT",
         "projects": [
           {
-            "name": "KarmaRed"
+            "name": "Call Validation",
+            "link": "https://abhandshake.com/ab-handshake-call-validation/",
+            "label": "ABH Call Validation project (opens in a new tab)"
           },
           {
-            "name": "Grispay"
+            "name": "AI Shield",
+            "link": "https://abhandshake.com/ai-shield/",
+            "label": "ABH AI Shield project (opens in a new tab)"
           },
           {
-            "name": "TekvelPark",
-            "link": "https://tekvel.com/en/park/",
-            "label": "TekvelPark project (opens in a new tab)"
-          }
-        ]
-      },
-      {
-        "position": "Front-end developer",
-        "link": "https://www.krastsvetmet.ru/",
-        "name": "Krastsvetmet",
-        "date": "May 2020 - February 2021",
-        "projects": [
-          {
-            "name": "Online Shop",
-            "link": "https://shop-krastsvetmet.ru/",
-            "label": "Krastsvetmet online shop (opens in a new tab)"
+            "name": "SMS Security",
+            "link": "https://abhandshake.com/sms-security/",
+            "label": "ABH SMS Security project (opens in a new tab)"
           },
           {
-            "name": "Metal Trading Platform"
-          }
-        ]
-      },
-      {
-        "position": "Mid Front-end Engineer",
-        "link": "https://sovcombank.ru/",
-        "name": "Sovcombank",
-        "date": "March 2021 - October 2021",
-        "projects": [
-          {
-            "name": "Main site of the company",
-            "link": "https://sovcombank.ru/",
-            "label": "Sovcombank main site (opens in a new tab)"
-          }
-        ]
-      },
-      {
-        "position": "Software Engineer",
-        "link": "https://www.epam.com/",
-        "name": "EPAM",
-        "date": "October 2021 - May 2022",
-        "projects": [
-          {
-            "name": "Contracts management platform"
+            "name": "Fraud Radar",
+            "link": "https://abhandshake.com/fraud-radar/",
+            "label": "ABH Fraud Radar project (opens in a new tab)"
           }
         ]
       },
@@ -167,30 +136,61 @@
         ]
       },
       {
-        "position": "Principal Frontend Architect",
-        "link": "https://abhandshake.com/",
-        "name": "AB Handshake",
-        "date": "March 2023 - *current",
+        "position": "Software Engineer",
+        "link": "https://www.epam.com/",
+        "name": "EPAM",
+        "date": "October 2021 - May 2022",
         "projects": [
           {
-            "name": "Call Validation",
-            "link": "https://abhandshake.com/ab-handshake-call-validation/",
-            "label": "ABH Call Validation project (opens in a new tab)"
+            "name": "Contracts management platform"
+          }
+        ]
+      },
+      {
+        "position": "Mid Front-end Engineer",
+        "link": "https://sovcombank.ru/",
+        "name": "Sovcombank",
+        "date": "March 2021 - October 2021",
+        "projects": [
+          {
+            "name": "Main site of the company",
+            "link": "https://sovcombank.ru/",
+            "label": "Sovcombank main site (opens in a new tab)"
+          }
+        ]
+      },
+      {
+        "position": "Front-end developer",
+        "link": "https://www.krastsvetmet.ru/",
+        "name": "Krastsvetmet",
+        "date": "May 2020 - February 2021",
+        "projects": [
+          {
+            "name": "Online Shop",
+            "link": "https://shop-krastsvetmet.ru/",
+            "label": "Krastsvetmet online shop (opens in a new tab)"
           },
           {
-            "name": "AI Shield",
-            "link": "https://abhandshake.com/ai-shield/",
-            "label": "ABH AI Shield project (opens in a new tab)"
+            "name": "Metal Trading Platform"
+          }
+        ]
+      },
+      {
+        "position": "Full-stack Developer",
+        "link": "https://sibdev.pro/",
+        "name": "Sibdev",
+        "date": "April 2019 - May 2020",
+        "projects": [
+          {
+            "name": "KarmaRed"
           },
           {
-            "name": "SMS Security",
-            "link": "https://abhandshake.com/sms-security/",
-            "label": "ABH SMS Security project (opens in a new tab)"
+            "name": "Grispay"
           },
           {
-            "name": "Fraud Radar",
-            "link": "https://abhandshake.com/fraud-radar/",
-            "label": "ABH Fraud Radar project (opens in a new tab)"
+            "name": "TekvelPark",
+            "link": "https://tekvel.com/en/park/",
+            "label": "TekvelPark project (opens in a new tab)"
           }
         ]
       }
@@ -226,23 +226,18 @@
       },
       {
         "title": "React",
-        "items": [
-          "Next.js",
-          "Relay",
-          "ReactQuery (Tanstack Query)",
-          "React Router"
-        ]
+        "items": ["Next.js", "Relay", "ReactQuery (Tanstack)", "React Router"]
       },
       {
-        "title": "Backend",
+        "title": "Backend & APIs",
         "items": ["Node.js", "Express", "MongoDB", "MySQL", "GraphQL"]
       },
       {
-        "title": "Development Tools",
-        "items": ["Webpack", "Rollup", "Vite", "Babel", "ESLint", "Prettier"]
+        "title": "Communications",
+        "items": ["WebRTC", "WebSockets", "Socket.io"]
       },
       {
-        "title": "Testing & Documentation",
+        "title": "Testing & QA",
         "items": ["Jest", "Mocha", "Cypress", "Storybook"]
       },
       {
@@ -254,15 +249,16 @@
         ]
       },
       {
-        "title": "Communications",
-        "items": ["WebRTC", "WebSockets", "Socket.io"]
-      },
-      {
-        "title": "Blockchain App",
+        "title": "Blockchain",
         "items": ["Solidity", "Web3", "Truffle", "Ganache"]
       },
+
       {
-        "title": "Other related",
+        "title": "Development Tools",
+        "items": ["Webpack", "Rollup", "Vite", "Babel", "ESLint", "Prettier"]
+      },
+      {
+        "title": "Other",
         "items": [
           "D3",
           "GSAP",
