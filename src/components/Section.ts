@@ -9,7 +9,7 @@ sheet.replaceSync(styles);
 sectionTemplate.innerHTML = `
       <section
         aria-label="-------------"
-        class="container grid gap-4 max-w-prose"
+        class="font-body container grid gap-4 max-w-prose"
       >
         <div>
           <div class="flex gap-4">
