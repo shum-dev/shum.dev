@@ -1,46 +1,57 @@
-const hiddenSections = document.querySelectorAll(".hidden-section");
-const hiddenLR = document.querySelectorAll(".hidden-lr");
+import "./components/IconSet";
+import "./components/Icon";
+import "./components/Section";
+import "./components/sections/Header";
+import "./components/sections/About";
+import "./components/sections/Education";
+import "./components/sections/WorkExperience";
+import "./components/sections/Skills";
+import "./components/sections/CodeExamples";
+import "./components/sections/Footer";
 
-const sectionsObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((section) => {
-      if (section.isIntersecting) {
-        section.target.classList.add("shown-section");
-        sectionsObserver.unobserve(section.target);
+document.addEventListener("DOMContentLoaded", () => {
+  const hiddenSections = document.querySelectorAll(".hidden-section");
+  const hiddenLR = document.querySelectorAll(".hidden-lr");
 
-        setTimeout(() => {
-          section.target.classList.remove("hidden-section", "shown-section");
-        }, 2000);
-      }
-    });
-  },
-  {
-    rootMargin: "0px 0px -120px 0px",
-  }
-);
+  const sectionsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((section) => {
+        if (section.isIntersecting) {
+          section.target.classList.add("shown-section");
+          sectionsObserver.unobserve(section.target);
 
-hiddenSections.forEach((element) => sectionsObserver.observe(element));
+          setTimeout(() => {
+            section.target.classList.remove("hidden-section", "shown-section");
+          }, 2000);
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px -120px 0px",
+    }
+  );
 
-// Left To Right Animation
-const LRObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((element) => {
-      if (element.isIntersecting) {
-        element.target.classList.add("shown-lr");
+  hiddenSections.forEach((element) => sectionsObserver.observe(element));
 
-        LRObserver.unobserve(element.target);
+  // Left To Right Animation
+  const LRObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((element) => {
+        if (element.isIntersecting) {
+          element.target.classList.add("shown-lr");
 
-        setTimeout(() => {
-          element.target.classList.remove("hidden-lr", "shown-lr");
-        }, 500);
-      }
-    });
-  },
-  {
-    threshold: 0.3,
-  }
-);
+          LRObserver.unobserve(element.target);
 
-hiddenLR.forEach((element) => LRObserver.observe(element));
+          setTimeout(() => {
+            element.target.classList.remove("hidden-lr", "shown-lr");
+          }, 500);
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    }
+  );
 
-export {};
+  hiddenLR.forEach((element) => LRObserver.observe(element));
+});

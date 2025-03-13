@@ -1,0 +1,334 @@
+{
+  "about": {
+    "text": "Based on nowhere digital nomad, a software engineer skilled in MERN stack with a strong focus on React.js and its ecosystem.",
+    "links": [
+      {
+        "title": "Github",
+        "href": "https://github.com/shum-dev",
+        "icon": "github"
+      },
+      {
+        "title": "LinkedIn",
+        "href": "https://linkedin.com/in/shum-dev",
+        "icon": "linkedin"
+      },
+      {
+        "title": "Telegram",
+        "href": "https://t.me/shum_dev",
+        "icon": "telegram"
+      },
+      {
+        "title": "Email",
+        "href": "mailto:egor@shum.dev",
+        "icon": "email"
+      }
+    ]
+  },
+  "education": {
+    "certificates": [
+      {
+        "title": "The Modern React",
+        "date": "Aug 2019",
+        "link": "https://www.udemy.com/certificate/UC-TMRVKST2/"
+      },
+      {
+        "title": "JavaScript Algorithms and Data Structures",
+        "date": "Jan 2020",
+        "link": "https://www.udemy.com/certificate/UC-40WL4IXF/"
+      },
+      {
+        "title": "M001: MongoDB Basics",
+        "date": "Dec 2020",
+        "link": "https://university.mongodb.com/course_completion/94ba1aab-f61d-42a0-85ed-397dda2b22c1?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "title": "M320: Data Modeling",
+        "date": "Jan 2020",
+        "link": "https://university.mongodb.com/course_completion/5402f268-1099-4f5a-a430-e8daa8caf197?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "title": "RxJS Basic",
+        "date": "Sep 2020",
+        "link": "https://drive.google.com/file/d/1GPyvdNj83X_cJEKJtne8VDGWSf2spla8/view?usp=sharing"
+      },
+      {
+        "title": "RxJS Masterclass",
+        "date": "Nov 2020",
+        "link": "https://drive.google.com/file/d/1WtdDrv6vR3pKwU6hQDBQW2ru7hWnlLYH/view?usp=sharing"
+      },
+      {
+        "title": "M220JS: MongoDB for Javascript Developers",
+        "date": "Jan 2021",
+        "link": "https://university.mongodb.com/course_completion/6129848f-d271-47f0-b7e5-28cd0c0ba3b2?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+      },
+      {
+        "title": "Microfrontends with React",
+        "date": "Dec 2024",
+        "link": "https://www.udemy.com/certificate/UC-ebdaf0fb-f74e-4466-a2fa-b20399056e5e"
+      },
+      {
+        "title": "Microfrontends with Module Federation",
+        "date": "Feb 2025",
+        "link": "https://www.udemy.com/certificate/UC-08d28e5b-76b4-4969-82c9-7abcf22848db"
+      },
+      {
+        "title": "ChatGPT & Midjourney",
+        "date": "Jan 2025",
+        "link": "https://www.udemy.com/certificate/UC-3e3dde56-42e3-418a-b1e4-6a2d3071b86b/"
+      },
+      {
+        "title": "Custom GPTs and Actions",
+        "date": "Feb 2025",
+        "link": "https://www.udemy.com/certificate/UC-bd9a1f4e-e037-4283-b217-de9270201fa6/"
+      }
+    ]
+  },
+  "workExperience": {
+    "companies": [
+      {
+        "position": "Full-stack Developer",
+        "link": "https://sibdev.pro/",
+        "name": "Sibdev",
+        "date": "April 2019 - May 2020",
+        "projects": [
+          {
+            "name": "KarmaRed"
+          },
+          {
+            "name": "Grispay"
+          },
+          {
+            "name": "TekvelPark",
+            "link": "https://tekvel.com/en/park/"
+          }
+        ]
+      },
+      {
+        "position": "Front-end developer",
+        "link": "https://www.krastsvetmet.ru/",
+        "name": "Krastsvetmet",
+        "date": "May 2020 - February 2021",
+        "projects": [
+          {
+            "name": "Online Shop",
+            "link": "https://shop-krastsvetmet.ru/"
+          },
+          {
+            "name": "Metal Trading Platform"
+          }
+        ]
+      },
+      {
+        "position": "Mid Front-end Engineer",
+        "link": "https://sovcombank.ru/",
+        "name": "Sovcombank",
+        "date": "March 2021 - October 2021",
+        "projects": [
+          {
+            "name": "Main site of the company",
+            "link": "https://sovcombank.ru/"
+          }
+        ]
+      },
+      {
+        "position": "Software Engineer",
+        "link": "https://www.epam.com/",
+        "name": "EPAM",
+        "date": "October 2021 - May 2022",
+        "projects": [
+          {
+            "name": "Contracts management platform"
+          }
+        ]
+      },
+      {
+        "position": "Senior Front-end Engineer",
+        "link": "https://datarockets.com/",
+        "name": "Datarockets",
+        "date": "May 2022 - March 2023",
+        "projects": [
+          {
+            "name": "Tawbar",
+            "link": "https://tawbar.com/"
+          },
+          {
+            "name": "Bunz",
+            "link": "https://bunz.com/"
+          }
+        ]
+      },
+      {
+        "position": "Principal Frontend Architect",
+        "link": "https://abhandshake.com/",
+        "name": "AB Handshake",
+        "date": "March 2023 - *current",
+        "projects": [
+          {
+            "name": "Call Validation",
+            "link": "https://abhandshake.com/ab-handshake-call-validation/"
+          },
+          {
+            "name": "AI Shield",
+            "link": "https://abhandshake.com/ai-shield/"
+          },
+          {
+            "name": "SMS Security",
+            "link": "https://abhandshake.com/sms-security/"
+          },
+          {
+            "name": "Fraud Radar",
+            "link": "https://abhandshake.com/fraud-radar/"
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "groups": [
+      {
+        "title": "Markup & Styles",
+        "items": [
+          "HTML",
+          "CSS, LESS, SASS, PostCSS",
+          "jSS(CSS-in-JS)",
+          "Tailwind",
+          "MaterialUI",
+          "Ant Design",
+          "Styled Components",
+          "Styled System"
+        ]
+      },
+      {
+        "title": "JavaScript",
+        "items": [
+          "ES6, ES7 ... ES2024",
+          "Vanilla JS",
+          "jQuery",
+          "RxJS",
+          "Redux + Redux Toolkit",
+          "Redux-observables",
+          "TypeScript",
+          "Mobx"
+        ]
+      },
+      {
+        "title": "React",
+        "items": ["Next.js", "Relay", "ReactQuery (Tanstack Query)", "React Router"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Express", "MongoDB", "MySQL", "GraphQL"]
+      },
+      {
+        "title": "Development Tools",
+        "items": ["Webpack", "Rollup", "Vite", "Babel", "ESLint", "Prettier"]
+      },
+      {
+        "title": "Testing & Documentation",
+        "items": ["Jest", "Mocha", "Cypress", "Storybook"]
+      },
+      {
+        "title": "Science",
+        "items": [
+          "Algorithms & Data Structures",
+          "Design Patterns",
+          "Data Modeling Patterns"
+        ]
+      },
+      {
+        "title": "Communications",
+        "items": ["WebRTC", "WebSockets", "Socket.io"]
+      },
+      {
+        "title": "Blockchain App",
+        "items": ["Solidity", "Web3", "Truffle", "Ganache"]
+      },
+      {
+        "title": "Other related",
+        "items": [
+          "D3",
+          "GSAP",
+          "Git",
+          "Docker",
+          "Nginx",
+          "Microservices",
+          "Module Federation"
+        ]
+      }
+    ]
+  },
+  "codeExamples": {
+    "examples": [
+      {
+        "githubLink": "https://github.com/shum-dev/YelpCamp",
+        "href": "https://yelpcamp.shum.dev/",
+        "title": "Yelp Camp",
+        "techStack": "Node.js Express MongoDB",
+        "description": "Application allows users to create/update/delete posts, leave comments. It has other features such as: Fuzzy serach, Google Maps API, Authentication, Image Upload and more ..."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/chat-board",
+        "href": "https://chat-board.shum.dev/",
+        "title": "Chat Board",
+        "techStack": "React Redux Node.js Express",
+        "description": "Twitter-like SPA on which people with similar interests discuss topics in the form of posted messages."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/react-colors",
+        "href": "https://react-colors.shum.dev/",
+        "title": "React Colors",
+        "techStack": "React MaterialUI JSS",
+        "description": "This is a nice and responsive application that lets you create and manage custom colour palettes or play with the default ones."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/d3_dashboard",
+        "href": "https://d3-dashboard.shum.dev/",
+        "title": "D3 Dashboard",
+        "techStack": "JS D3.js",
+        "description": "This project visualize 'THE WORLD BANK' data set to show world's CO2 emissions."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/api-dashboard",
+        "href": "https://api-dashboard.shum.dev/",
+        "title": "API Dashboard",
+        "techStack": "React Node.js Express Docker Nginx",
+        "description": "A simple full-stack application that allows users to request data from multiple external APIs and display the results in the form of a table or a collapsible JSON structure."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/eorawidget",
+        "href": "https://eora-widget.shum.dev/",
+        "title": "EORA widget",
+        "techStack": "React",
+        "description": "A dummy chatbot has been implemented in the form of a widget that can be integrated into any project."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/2b_app",
+        "href": "https://pizzas-app.shum.dev/",
+        "title": "Pizzas App",
+        "techStack": "React Node.js Express MongoDB Docker Nginx",
+        "description": "The full-stack application with authentication/authotization functionality that allows users to create pizzas and store it in DB."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/movies_keeper",
+        "href": "https://movies-keeper.shum.dev/",
+        "title": "Movies keeper",
+        "techStack": "React TS RxJS Webpack",
+        "description": "This single page application allows you to work with OMDb API. You can search through the movies database, get detailed information about particular movie and create your favorite list."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/crowd-funding-eth-contract",
+        "href": "https://crowdfunding.shum.dev/",
+        "title": "Crowdfunding Dapp",
+        "techStack": "React TS Next.js Web3 Truffle Solidity",
+        "description": "Ethereum Dapp that allows funding a project or venture by raising money from a large number of people."
+      },
+      {
+        "githubLink": "https://github.com/shum-dev/aura-finder",
+        "href": "https://github-finder.shum.dev/",
+        "title": "Github Finder",
+        "techStack": "React Redux",
+        "description": "This application enables you to retrieve all repositories associated with a specific user by searching for their username. In addition, you can view detailed information for each repository belonging to the user."
+      }
+    ]
+  }
+}
