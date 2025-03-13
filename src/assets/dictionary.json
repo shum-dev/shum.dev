@@ -5,22 +5,26 @@
       {
         "title": "Github",
         "href": "https://github.com/shum-dev",
-        "icon": "github"
+        "icon": "github",
+        "label": "Shum's github profile (opens in a new tab)"
       },
       {
         "title": "LinkedIn",
         "href": "https://linkedin.com/in/shum-dev",
-        "icon": "linkedin"
+        "icon": "linkedin",
+        "label": "Shum's LinkedIn profile (opens in a new tab)"
       },
       {
         "title": "Telegram",
         "href": "https://t.me/shum_dev",
-        "icon": "telegram"
+        "icon": "telegram",
+        "label": "Shum's Telegram (opens in a new tab)"
       },
       {
         "title": "Email",
         "href": "mailto:egor@shum.dev",
-        "icon": "email"
+        "icon": "email",
+        "label": "Shum's email"
       }
     ]
   },
@@ -99,7 +103,8 @@
           },
           {
             "name": "TekvelPark",
-            "link": "https://tekvel.com/en/park/"
+            "link": "https://tekvel.com/en/park/",
+            "label": "TekvelPark project (opens in a new tab)"
           }
         ]
       },
@@ -111,7 +116,8 @@
         "projects": [
           {
             "name": "Online Shop",
-            "link": "https://shop-krastsvetmet.ru/"
+            "link": "https://shop-krastsvetmet.ru/",
+            "label": "Krastsvetmet online shop (opens in a new tab)"
           },
           {
             "name": "Metal Trading Platform"
@@ -126,7 +132,8 @@
         "projects": [
           {
             "name": "Main site of the company",
-            "link": "https://sovcombank.ru/"
+            "link": "https://sovcombank.ru/",
+            "label": "Sovcombank main site (opens in a new tab)"
           }
         ]
       },
@@ -149,11 +156,13 @@
         "projects": [
           {
             "name": "Tawbar",
-            "link": "https://tawbar.com/"
+            "link": "https://tawbar.com/",
+            "label": "Tawbar project (opens in a new tab)"
           },
           {
             "name": "Bunz",
-            "link": "https://bunz.com/"
+            "link": "https://bunz.com/",
+            "label": "Bunz project (opens in a new tab)"
           }
         ]
       },
@@ -165,19 +174,23 @@
         "projects": [
           {
             "name": "Call Validation",
-            "link": "https://abhandshake.com/ab-handshake-call-validation/"
+            "link": "https://abhandshake.com/ab-handshake-call-validation/",
+            "label": "ABH Call Validation project (opens in a new tab)"
           },
           {
             "name": "AI Shield",
-            "link": "https://abhandshake.com/ai-shield/"
+            "link": "https://abhandshake.com/ai-shield/",
+            "label": "ABH AI Shield project (opens in a new tab)"
           },
           {
             "name": "SMS Security",
-            "link": "https://abhandshake.com/sms-security/"
+            "link": "https://abhandshake.com/sms-security/",
+            "label": "ABH SMS Security project (opens in a new tab)"
           },
           {
             "name": "Fraud Radar",
-            "link": "https://abhandshake.com/fraud-radar/"
+            "link": "https://abhandshake.com/fraud-radar/",
+            "label": "ABH Fraud Radar project (opens in a new tab)"
           }
         ]
       }
@@ -213,7 +226,12 @@
       },
       {
         "title": "React",
-        "items": ["Next.js", "Relay", "ReactQuery (Tanstack Query)", "React Router"]
+        "items": [
+          "Next.js",
+          "Relay",
+          "ReactQuery (Tanstack Query)",
+          "React Router"
+        ]
       },
       {
         "title": "Backend",

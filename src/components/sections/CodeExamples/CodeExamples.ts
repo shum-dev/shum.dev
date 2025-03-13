@@ -20,6 +20,7 @@ codeExamplesTemplate.innerHTML = `
             rel="noopener noreferrer nofollow"
             target="_blank"
             class="text-accent hover:text-current transition w-min"
+            aria-label="${project.title} github repository (opens in a new tab)"
           >
             <custom-icon name="github"></custom-icon>
           </a>
@@ -28,6 +29,7 @@ codeExamplesTemplate.innerHTML = `
             rel="noopener noreferrer nofollow"
             target="_blank"
             class="text-accent hover:text-current transition w-min"
+            aria-label="${project.title} project (opens in a new tab)"
           >
             <custom-icon name="external-link"></custom-icon>
           </a>
@@ -40,6 +42,7 @@ codeExamplesTemplate.innerHTML = `
               rel="noopener noreferrer nofollow"
               target="_blank"
               class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
+              aria-label="${project.title} project (opens in a new tab)"
               >${project.title}</a
             >
           </h5>

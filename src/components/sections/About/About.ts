@@ -32,15 +32,16 @@ aboutTemplate.innerHTML = `
           .map(
             (link) =>
               `<li title="${link.title}" class="hidden-lr group" >
-          <a
-            href="${link.href}"
-            rel="noopener noreferrer nofollow"
-            target="_blank"
-            class="text-accent bg-bkgSecondary rounded group-hover:text-current transition block p-2 sm:p-4 shadow-card-down group-hover:shadow-card-up group-hover:-translate-y-2"
-          >
-            <custom-icon name="${link.icon}"></custom-icon>
-          </a>
-        </li>`
+                <a
+                  href="${link.href}"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="text-accent bg-bkgSecondary rounded group-hover:text-current transition block p-2 sm:p-4 shadow-card-down group-hover:shadow-card-up group-hover:-translate-y-2"
+                  aria-label="${link.label}"
+                >
+                  <custom-icon name="${link.icon}"></custom-icon>
+                </a>
+              </li>`
           )
           .join("")}
       </ul>

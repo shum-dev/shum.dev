@@ -15,6 +15,7 @@ expTemplate.innerHTML = `<section-component sSubtitle="EXPERIENCE" sTitle="Caree
             rel="noopener noreferrer nofollow"
             target="_blank"
             class="text-accent bg-bkgSecondary rounded group-hover:text-current transition block p-2 sm:p-4 shadow-card-down group-hover:shadow-card-up group-hover:-translate-y-2"
+            aria-label="Download my CV (PDF)"
           >
             <custom-icon name="pdf-file"></custom-icon>
           </a>
@@ -26,6 +27,7 @@ expTemplate.innerHTML = `<section-component sSubtitle="EXPERIENCE" sTitle="Caree
             rel="noopener noreferrer nofollow"
             target="_blank"
             class="text-accent bg-bkgSecondary rounded group-hover:text-current transition block p-2 sm:p-4 shadow-card-down group-hover:shadow-card-up group-hover:-translate-y-2"
+            aria-label="Download my CV (DOC)"
           >
             <custom-icon name="doc-file"></custom-icon>
           </a>
@@ -51,6 +53,7 @@ expTemplate.innerHTML = `<section-component sSubtitle="EXPERIENCE" sTitle="Caree
               href="${company.link}"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              aria-label="${company.name} web-site (opens in a new tab)"
               class="decoration-accent underline hover:text-accent transition underline-offset-8 decoration-1"
               >${company.name}</a
             >
@@ -77,6 +80,7 @@ expTemplate.innerHTML = `<section-component sSubtitle="EXPERIENCE" sTitle="Caree
                               rel="noopener noreferrer nofollow"
                               target="_blank"
                               class="text-accent hover:text-current transition"
+                              aria-label="${project.label}"
                             >
                               <custom-icon name="external-link"></custom-icon>
                             </a>
