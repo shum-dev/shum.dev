@@ -12,7 +12,7 @@ codeExamplesTemplate.innerHTML = `
       .map(
         (project) => `
       <li
-        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4 decor"
       >
         <div class="flex gap-4 justify-end">
           <a

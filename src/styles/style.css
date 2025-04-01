@@ -96,4 +96,21 @@
     filter: blur(0);
     transform: translateX(0);
   }
+
+  .decor::after {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    background: linear-gradient(transparent, #FFDA53, transparent);
+    left: 1px;
+    top: 65%;
+    opacity: 0;
+    transition: top 300ms ease, opacity 300ms ease;
+  }
+
+  .decor:hover::after {
+    opacity: 1;
+    top: 60px;
+  }
 }

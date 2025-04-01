@@ -40,7 +40,7 @@ expTemplate.innerHTML = `<section-component sSubtitle="EXPERIENCE" sTitle="Caree
         .map(
           (company) => `
       <li
-        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4 decor"
       >
         <small class="tracking-widest text-muted uppercase drop-shadow-text-sm"
       > ${company.position}</small

@@ -16,7 +16,7 @@ skillsTemplate.innerHTML = `
       .map(
         (skill) => `
       <li
-        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4"
+        class="rounded shadow-card-down hover:shadow-card-up hover:-translate-y-2 max-w-sm sm:max-w-none w-full bg-bkgSecondary transition flex flex-col gap-4 p-4 decor"
       >
         <h5 class="text-xl font-medium tracking-wide">${skill.title}</h5>
 
