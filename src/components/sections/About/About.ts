@@ -2,7 +2,7 @@ import dictionary from "assets/dictionary.json";
 
 const aboutTemplate = document.createElement("template");
 
-import avatarUrl from "/images/shum_ava.webp";
+import avatarUrl from "/assets/shum_ava.webp";
 
 aboutTemplate.innerHTML = `
 <section aria-label="About" class="container max-w-prose">
