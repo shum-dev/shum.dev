@@ -129,14 +129,10 @@
         "date": "May 2022 - March 2023",
         "projects": [
           {
-            "name": "Tawbar",
-            "link": "https://tawbar.com/",
-            "label": "Tawbar project (opens in a new tab)"
+            "name": "Tawbar"
           },
           {
-            "name": "Bunz",
-            "link": "https://bunz.com/",
-            "label": "Bunz project (opens in a new tab)"
+            "name": "Bunz"
           }
         ]
       },
